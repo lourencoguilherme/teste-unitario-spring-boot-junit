@@ -31,7 +31,7 @@ public class UsuarioControllerTest {
     private UsuarioService usuarioService;
 
     @Test
-    public void testCadastrarUsuario() throws Exception {
+    public void dado_que_informo_usuarioDto_correto_entao_cadastra_usuario_com_status_201_created() throws Exception {
         UsuarioDTO usuarioDTO = new UsuarioDTO();
         usuarioDTO.setCpf("12345678900");
         usuarioDTO.setNome("Nome do Usuário");
@@ -53,7 +53,7 @@ public class UsuarioControllerTest {
     }
 
     @Test
-    public void testBuscarUsuarioPorCpf() throws Exception {
+    public void dado_que_informo_um_cpf_valido_entao_retorna_usuario_com_status_200_ok() throws Exception {
         String cpf = "12345678900";
         Usuario usuario = new Usuario();
         usuario.setId(1L);

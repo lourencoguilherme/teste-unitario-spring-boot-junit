@@ -31,7 +31,7 @@ public class UsuarioControllerTest {
     private UsuarioService usuarioService;
 
     @Test
-    public void dado_que_informo_usuarioDto_correto_entao_cadastra_usuario_com_status_201_created() throws Exception {
+    public void dado_que_informo_usuario_correto_entao_cadastra_usuario_com_status_201_created() throws Exception {
         UsuarioDTO usuarioDTO = new UsuarioDTO();
         usuarioDTO.setCpf("12345678900");
         usuarioDTO.setNome("Nome do Usuário");

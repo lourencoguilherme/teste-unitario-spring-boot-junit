@@ -25,7 +25,7 @@ public class UsuarioServiceTest {
     private UsuarioRepository usuarioRepository;
 
     @Test
-    public void testCadastrarUsuario() {
+    public void dado_que_informo_usuarioDto_correto_entao_cadastra_usuario() {
         UsuarioDTO usuarioDTO = new UsuarioDTO();
         usuarioDTO.setCpf("12345678900");
         usuarioDTO.setNome("Nome do Usuário");
@@ -44,7 +44,7 @@ public class UsuarioServiceTest {
     }
 
     @Test
-    public void testBuscarUsuarioPorCpf() {
+    public void dado_que_informo_um_cpf_valido_entao_retorna_usuario() {
         String cpf = "12345678900";
         Usuario usuario = new Usuario();
         usuario.setId(1L);
